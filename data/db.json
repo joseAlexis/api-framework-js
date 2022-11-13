@@ -1,0 +1,79 @@
+{
+  "boards": [
+    {
+      "id": 1,
+      "name": "MyBoard",
+      "userId": 1
+    },
+    {
+      "name": "My New Board",
+      "id": 2,
+      "userId": 1
+    },
+    {
+      "name": "My New Board 2",
+      "userId": 2,
+      "createdDate": "2022-11-13",
+      "id": 6
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "name": "Do Shooping!",
+      "completed": false,
+      "boardId": 1,
+      "userId": 1
+    },
+    {
+      "id": 1,
+      "name": "Do Shooping!",
+      "completed": false,
+      "boardId": 2,
+      "userId": 2
+    }
+
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Go to the bank",
+      "completed": false,
+      "todoId": 1,
+      "userId": 1
+    },
+    {
+      "name": "Go to the bank 2",
+      "completed": false,
+      "todoId": 1,
+      "id": 2,
+      "userId": 1
+    },
+    {
+      "name": "Go to the bank 2",
+      "completed": false,
+      "todoId": 1,
+      "id": 3,
+      "userId": 1
+    },
+    {
+      "name": "Go to the bank 2",
+      "completed": false,
+      "todoId": 1,
+      "id": 4,
+      "userId": 1
+    }
+  ],
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$KgReT.R0NUm0yVCjNaJkLeqrkWI5UeGBq.spb4BY0hHHs.FcFfL8e",
+      "id": 1
+    },
+    {
+      "email": "test@mail.com",
+      "password": "$2a$10$2i.iyqy07/yuEVV0SqiZJe8QE90bx0ZV1r/2zfWEfmJcG79./US4.",
+      "id": 2
+    }
+  ]
+}
