@@ -1,16 +1,18 @@
-const { axios } = require('axios');
+const axios = require('axios');
 
-export class Request {
+class Request {
     constructor(token) {
         this.instance = axios.create({
             baseURL: 'http://localhost:3000',
             timeout: 1000,
             headers: {
-                Authorization: `bearer ${token}`,
+                Authorization: `Bearer ${token}`,
                 "Content-Type": "application/json"
             }
         })
     }
 
-    get instance() { return this.instance; }
+    getInstance() { return this.instance; }
 }
+
+module.exports = Request;

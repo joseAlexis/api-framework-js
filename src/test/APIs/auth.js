@@ -1,18 +1,23 @@
-const { axios } = require('axios');
+const axios = require('axios');
 
-export class Auth {
-    constructor() {
-        this.request = axios.create({
-            baseURL: 'http://localhost:3000',
-            timeout: 1000,
+async function getToken() {
+    const data = {
+        "email": "test@mail.com",
+        "password": "bestPassw0rd"
+    }
+
+    let response = await axios.post(
+        `http://localhost:3000/login`,
+        data,
+        {
             headers: {
                 "Content-Type": "application/json"
             }
-        });
-    }
+        }
+    )
 
-    async getToken() {
-        const { data } = await this.request.get('/login');
-        return data.accessToken;
-    }
+    const token = await response.data.accessToken;
+    return token;
 }
+
+module.exports = { getToken }

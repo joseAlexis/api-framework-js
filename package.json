@@ -4,8 +4,9 @@
   "description": "API Automation Framework ",
   "main": "index.js",
   "scripts": {
-    "start-server": "npx json-server --watch data/db.json",
-    "test": "mocha"
+    "debug-server": "nodemon src/app.js",
+    "start-server": "node src/app.js",
+    "test": "npx mocha \"./src/test/*.test.js\" --recursive"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "json-server": "^0.17.1",
     "json-server-auth": "^2.1.0",
     "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.21",
     "mocha": "^10.1.0"
   }
 }
